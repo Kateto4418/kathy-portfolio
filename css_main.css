@@ -1,0 +1,308 @@
+:root{
+	--bejavo: #f8eada;
+	--cherveno: #842e2e;
+	--tumnocherveno: #602323;
+	--zeleno: #ad9a5c;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: var(--tumnocherveno);
+}
+
+.bodyamane{
+	margin: auto;
+	width: 1650px;
+	background-color: var(--bejavo);
+	background-image: url("Images/Hearts7.png");
+	background-position: top center;
+}
+
+/*Менюто като цяло, позиционираме го спрямо нормалното си положение*/
+.dropdown{
+	position: relative;
+	margin-right: 15px;
+}
+
+/*Навигацията като цяло*/
+nav{
+	background-color: var(--cherveno);
+	padding: 20px;
+	display: flex;
+	border-bottom: solid 5px #602323;
+}
+
+/*Самият бутон*/
+.dropbutton{
+	background-color: var(--cherveno);
+	color: #f8eada;
+	border: solid 3px #f8eada;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 35px;
+	font-family: "WDXL Lubrifont TC", sans-serif;
+	font-style: normal;
+}
+
+/*Менюто, което пада. Позиционираме го спрямо бутона.*/
+.drop-content{
+	display: none;
+	position: absolute;
+	min-width: 110px;
+	background-color: var(--cherveno);
+	border-bottom: solid 3px #f8eada;
+	border-left: solid 3px #f8eada;
+	border-right: solid 3px #f8eada;
+	border-top: solid 3px #f8eada;
+	border-radius: 0px 0px 5px 5px;
+	margin-left: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+}
+
+/*Опциите на менюто, което пада. Те са block елементи,
+ за да са едно под друго и да можеш да натиснеш цялото поле*/
+.drop-content a {
+	color: var(--bejavo);
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+/*Когато hover-неш над опциите в менюто, което пада*/
+.drop-content a:hover{
+	background-color: var(--zeleno);
+}
+
+/*Менюто като цяло, като hover-неш опциите се показват като блокови елементи*/
+.dropdown:hover .drop-content{
+	display: block;
+}
+
+.dropdown:hover .dropbutton{
+	background-color: var(--zeleno);
+}
+
+#houseicon{
+	height: 55px;
+	margin-right: 10px;
+}
+
+.main{
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	padding-top: 80px;
+	justify-content: center;
+}
+
+.pfp{
+	margin-left: 100px;
+	margin-top: 100px;
+	width: 500px;
+	border: solid 6px var(--cherveno);
+	border-radius: 100px;
+}
+
+.info{
+	border: solid 8px #842e2e;
+	border-radius: 5px;
+	width: 620px;
+	margin-top: 100px;
+}
+
+.ime{
+	font-size: 100px;
+	line-height: 0.5;
+	font-family: "Rubik Bubbles", system-ui;
+	font-weight: 300;
+	font-style: normal;
+	color: var(--zeleno);
+	padding: 20px;
+	-webkit-text-stroke: 3px #8b7b47;
+}
+
+#pencheva{
+	padding-left: 150px;
+}
+
+hr.line{
+	border: none;
+	height: 4px;
+	background: var(--cherveno);
+	margin-left: 80px;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.text{
+	text-align: right;
+	padding-left: 40px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 30px;
+	font-family: "Yanone Kaffeesatz", sans-serif;
+	color: #602323;
+	font-weight: bold;
+}
+
+.bottom{
+	display: flex;
+	padding-top: 300px;
+	padding-bottom: 450px;
+	width: 1400px;
+	padding-left: 125px;
+	gap: 50px;
+}
+
+.pr_rabota{
+	border: solid 5px #842e2e;
+	border-radius: 5px;
+	width: 1000px;
+	padding-bottom: 10px;
+}
+
+.pr_line{
+	border: none;
+	height: 3px;
+	background: var(--cherveno);
+	margin-right: 440px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+.az_line{
+	border: none;
+	height: 3px;
+	background: var(--cherveno);
+	margin-right: 470px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+footer{
+	background-color: var(--cherveno);
+	border-top: solid 5px #602323;
+	padding: 50px;
+}
+
+.programi{
+	display: flex;
+	gap: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+	flex-wrap: wrap;
+	cursor: default;
+	font-family: "Chewy", system-ui;
+	color: var(--cherveno);
+}
+
+.pr{
+	font-size: 25px;
+	border: outset 5px #ad9a5c;
+	padding: 8px;
+}
+
+.Az{
+	border: solid 5px #842e2e;
+	border-radius: 5px;
+	width: 1000px;
+	
+}
+
+/*#842e2e #ad9a5c*/
+#indesign:hover{
+	background-color: #49021F;
+	border: outset 5px #FF3366;
+	color: #FF3366;
+}
+
+#photoshop:hover{
+	background-color: #001E36;
+	border: outset 5px #31A8FF;
+	color: #31A8FF;
+}
+
+#animate:hover{
+	background-color: #00005A;
+	border: outset 5px #9898FE;
+	color: #9898FE;
+}
+
+#premiere:hover{
+	background-color: #00005A;
+	border: outset 5px #9999FE;
+	color: #9999FE;
+}
+
+#davinci:hover{
+	background-color: #293543;
+	color: #3DBDE4;
+	border-style: outset;
+	border-image: linear-gradient(to left, #E75059,#D2D840)1;
+}
+
+#audacity:hover{
+	background-color: #082791;
+	color: #FAB835; 
+	border-style: outset;
+	border-image: linear-gradient(to left, #EC0707,#FAB835)1;
+}
+
+#notepad:hover{
+	background-color: white;
+	border: outset 5px #A9F37E;
+	color: #0D7700;
+}
+
+#godot:hover{
+	background-color: #468BBE;
+	border: outset 5px #403F41;
+	color: white;
+}
+
+#aseprite:hover{
+	background-color: #FFFFFF;
+	border: outset 5px #7D909E;
+	color: #65535F;
+}
+
+#canva:hover{
+	background-color: #0BB3D1;
+	border: outset 5px #7B2CE7;
+	color: white;
+}
+
+#figma:hover{
+	background-color: #874fff;
+	border: outset 5px #24cb71;
+	color: #ff7237;
+}
+
+.zaglavie{
+	font-family: "WDXL Lubrifont TC", sans-serif;
+	font-size: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	color: var(--tumnocherveno);
+}
+
+.footertext{
+	text-align: center;
+	color: var(--bejavo);
+}
+
+.zamen{
+	padding: 10px;
+	font-size: 27px;
+	font-family: "Yanone Kaffeesatz", sans-serif;
+	color: #602323;
+	font-weight: bold;
+}
